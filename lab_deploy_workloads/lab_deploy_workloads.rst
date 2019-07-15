@@ -11,7 +11,7 @@ In addition to storage, VM creation, management, and monitoring can all be perfo
 
 .. note::
 
-   Prism also offers native support for VM CRUD operations for Nutanix clusters running ESXi.
+   Prism also offers native support for VM CRUD operations for Nutanix clusters running ESXi when the vCenter has been registered in Prism.
 
 In the following exercise we'll walk through creating VMs from source media and from existing disk images.
 
@@ -46,6 +46,7 @@ Nutanix validates and distributes these drivers via http://portal.nutanix.com. T
        - **Operation** - Clone from Image Service
        - **Image** - Windows2012R2.ISO
        - Select **Update**
+       
        *This will mount the Windows Server ISO from the Image Service for boot/installation*
 
    - Select **+ Add New Disk**
@@ -54,6 +55,7 @@ Nutanix validates and distributes these drivers via http://portal.nutanix.com. T
        - **Storage Container** - Default Container
        - **Size (GiB)** - 30 GiB
        - Select **Add**
+
        *This will create a 30GiB vDisk on the selected Storage Container*
 
    - Select **+ Add New Disk**
@@ -65,6 +67,7 @@ Nutanix validates and distributes these drivers via http://portal.nutanix.com. T
    - Select **Add New NIC**
        - **VLAN Name** - Primary
        - Select **Add**
+
        *This will add a single virtual NIC to the VM on the selected Virtual Network*
 
 #. Click **Save** to create the VM.
@@ -108,11 +111,11 @@ Nutanix validates and distributes these drivers via http://portal.nutanix.com. T
 
      .. figure:: images/deploy_workloads_08.png
 
-#. Following OS installation you can complete the **Nutanix Guest Tools (NGT)** installtion by selecting the VM in Prism and clicking **Manage Guest Tools > Enable Guest Tools > Mount Guest Tools**.
+#. Following OS installation you can complete the **Nutanix Guest Tools (NGT)** installation by selecting the VM in Prism and clicking **Manage Guest Tools > Enable Guest Tools > Mount Guest Tools**.
 
-   This will use the virtual CD-ROM device to mount the NGT installation ISO to the VM. NGT includes the previously installed VirtIO drivers, as well as services to support self-service file restore and application consistent (VSS) snapshots.
+   This will use the virtual CD-ROM device to mount the NGT installation ISO to the VM. NGT includes the previously installed VirtIO drivers, as well as services to support **Self-Service File Restore (SSR)** and **Application Consistent (VSS) snapshots**.
 
-#. Return to the VM console to complete the NGT installation.
+#. Return to the Windows VM console to complete the NGT installation.
 
 Creating a Linux VM
 ...................
@@ -134,6 +137,7 @@ In this exercise you will create a CentOS VM from an existing, pre-installed dis
       - **Operation** - Clone from Image Service
       - **Image** - CentOS7.qcow2
       - Select **Add**
+
       *This will create a thin clone of the existing CentOS disk image*
 
    - Select **Add New NIC**
@@ -144,8 +148,10 @@ In this exercise you will create a CentOS VM from an existing, pre-installed dis
 
 #. Click **Save** to create the VM.
 
+#. **Launch the console** to see the VM being started.
+
 Takeaways
 +++++++++
 
-- In this lab you saw how simple it is to deploy a Linux VM and a Windows VM.
+- In this lab you saw how simple it is to deploy a Windows VM and a Linux VM.
 - The Image Configuration tool allows you to have a catalog of available images to be used in VM deployments as needed and covering a broad format support which includes qcow, qcow2, vmdk, VHD, VHDx, RAW, and ISO.

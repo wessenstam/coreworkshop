@@ -83,7 +83,7 @@ You can run a STIG report, which will check on all the STIGs and report on which
 
 The steps to run the STIG report are as follows:
 
-#. Connect to Controller VM (CVM) as nutanix user via SSH (Using Terminal, putty, or similar program)
+#. Connect to one of the **Controller VM (CVM)** as nutanix user via SSH (Using Terminal, putty, or similar program)
 
 #. Change to the root directory of the CVM
 
@@ -208,9 +208,9 @@ Compromise the /etc/shadow file
 
 #. The following text was extracted from one of the security checks under the AOS STIGs:
 
-- **Rule Version (STIG-ID)**: NTNX-51-000034
-- **Rule Title**: The /etc/shadow file must be group-owned by root.
-- **Fix Text**: salt-call state.sls security/CVM/fdpermsownerCVM
+  - **Rule Version (STIG-ID)**: NTNX-51-000034
+  - **Rule Title**: The /etc/shadow file must be group-owned by root.
+  - **Fix Text**: salt-call state.sls security/CVM/fdpermsownerCVM
 
 #. Change to the root directory of the CVM
 

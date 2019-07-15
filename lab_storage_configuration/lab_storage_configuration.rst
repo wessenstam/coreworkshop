@@ -28,7 +28,7 @@ The **Storage Pool** is the aggregation of all of the physical disks within a gi
 
    To learn more about additional DSF constructs such as vDisks, extents, and extent groups, refer to `this section <https://nutanixbible.com/#anchor-book-of-acropolis-distributed-storage-fabric>`_ of the Nutanix Bible.
 
-In this lab we will use Prism to perform a basic container setup.
+In this lab we will use Prism Elements to perform a basic storage container setup.
 
 Prism Element Storage Configuration Items
 +++++++++++++++++++++++++++++++++++++++++

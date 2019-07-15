@@ -18,7 +18,7 @@ Each node is typically uplinked to a physical switch port trunked/tagged to mult
 
 VM networking is configured through Prism (or optionally CLI/REST), making network management in AHV very simple. In the following exercise you will walk through virtual network creation in AHV.
 
-With AHV, you can also setup a DHCP server to automatically provide IP addresses for VMs using the IP address management (IPAM) service.
+With AHV, you can also setup a DHCP server to automatically provide IP addresses for VMs using the IP address management (IPAM) service. Meaning you don't have to setup a separate DHCP server for the network. Which makes network management easier.
 
 Additional details about AHV networking can be found `here <https://nutanixbible.com/#anchor-book-of-ahv-networking>`_.
 
@@ -33,10 +33,10 @@ Virtual Networks
 .. figure:: images/network_config_01.png
 .. figure:: images/network_config_001.png
 
-Virtual NICs
-............
+Virtual NICs of VMs
+...................
 
-- Each vNIC belongs to exactly one virtual network
+- Each vNIC of a VM belongs to exactly one virtual network
 - For IPAM-enabled networks, vNICs get life-long static IP assignments
 - User may configure pools to automatically allocate IPs, or specify the IP manually
 
@@ -78,7 +78,7 @@ Connect to Prism Element and create a network for user VM interfaces. Use any VL
 
    .. figure:: images/network_config_04.png
 
-   The configured virtual network will now be available across all nodes within the cluster. Virtual networks in AHV behave like Distributed Virtual Switches in ESXi, meaning you do not need to configure the same settings on each individual host within the cluster. When creating VMs in IPAM managed networks, the IP can optionally be manually specified during vNIC creation.
+   The configured virtual network will now be available across all nodes within the cluster. Virtual networks in AHV behave like Distributed Virtual Switches in ESXi, meaning you do not need to configure the same settings on each individual host within the cluster. When creating VMs in IPAM managed networks, the IP can optionally be manually specified during the **add NIC** process.
 
 Setup User VM Network with IPAM
 ...............................

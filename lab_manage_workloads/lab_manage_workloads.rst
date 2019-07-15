@@ -25,7 +25,7 @@ Explore VM power actions and console access.
 
 #. Select the VM, then click **Launch Console**.
 
-   The console window provides 4 actions: Mount ISO, CTRL-ALT-DEL, Take Screen Capture, and Power.
+   The console window provides 4 actions: **Mount ISO, CTRL-ALT-DEL, Take Screen Capture, and Power**.
 
    .. figure:: images/manage_workloads_01.png
 
@@ -146,5 +146,5 @@ Suggestions:
 Takeaways
 +++++++++
 
-- In this lab you got to experience first hand how AHV provides a complete set of tools and actions that can be done manage the VMs in the cluster.
-- It is possible to register an ESXI cluster to Prism and be able to perform some of the basic VM management tasks right from Prism as well.
+- In this lab you got to experience first hand how AHV provides a complete set of tools and actions that can be done to manage the VMs in the cluster.
+- It is possible to register an ESXi cluster (via vCenter) to Prism and be able to perform some of the basic VM management tasks right from Prism as well.
