@@ -46,7 +46,7 @@ Nutanix validates and distributes these drivers via http://portal.nutanix.com. T
        - **Operation** - Clone from Image Service
        - **Image** - Windows2012R2.ISO
        - Select **Update**
-       
+
        *This will mount the Windows Server ISO from the Image Service for boot/installation*
 
    - Select **+ Add New Disk**
@@ -63,6 +63,19 @@ Nutanix validates and distributes these drivers via http://portal.nutanix.com. T
        - **Operation** - Clone from Image Service
        - **Image** - Nutanix VirtIO ISO
        - Select **Add**
+
+   .. -------------------------------------------------------------------------------------
+   .. The Below as soon as 5.11 is GA and we want to run that version for our workshops!!!!
+
+   .. - **Boot Configuration**
+    ..  - Leave the default selected **Legacy Boot**
+
+      .. .. note::
+      ..  At the following URL you can find the supported Operating Systems
+      ..  http://my.nutanix.com/uefi_boot_support
+
+   .. -------------------------------------------------------------------------------------
+
 
    - Select **Add New NIC**
        - **VLAN Name** - Primary
@@ -139,6 +152,19 @@ In this exercise you will create a CentOS VM from an existing, pre-installed dis
       - Select **Add**
 
       *This will create a thin clone of the existing CentOS disk image*
+
+.. -------------------------------------------------------------------------------------
+.. The Below as soon as 5.11 is GA and we want to run that version for our workshops!!!!
+
+.. - **Boot Configuration**
+ ..  - Leave the default selected **Legacy Boot**
+
+   .. .. note::
+   ..  At the following URL you can find the supported Operating Systems
+   ..  http://my.nutanix.com/uefi_boot_support
+
+.. -------------------------------------------------------------------------------------
+
 
    - Select **Add New NIC**
       - **VLAN Name** - Primary

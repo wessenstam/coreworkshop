@@ -27,7 +27,7 @@ Explore VM power actions and console access.
 
    The console window provides 4 actions: **Mount ISO, CTRL-ALT-DEL, Take Screen Capture, and Power**.
 
-   .. figure:: images/manage_workloads_01.png
+   .. figure:: images/manage_workloads_01_a.png
 
    .. note::
 
@@ -76,6 +76,17 @@ VM live migration is a critical feature for any virtualized environment, allowin
    When the task completes, verify that your VM host location has changed from the host recorded above to the new location you selected.
 
    .. figure:: images/manage_workloads_04.png
+
+.. -------------------------------------------------------------------------------------
+.. The Below as soon as 5.11 is GA and we want to run that version for our workshops!!!!
+
+.. .. note::
+..   To see the progress of the migration, click on the All VM Tasks tab at the bottom of the screen. Below is a screenshot of a migration.
+
+.. .. figure:: images/manage_workloads_03_a.png
+
+.. -------------------------------------------------------------------------------------
+
 
 Configuring Affinity Policies
 .............................

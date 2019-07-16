@@ -34,6 +34,19 @@ Fill out the following fields:
     - **Image** - CentOS7.qcow2
     - Select **Add**
 
+.. -------------------------------------------------------------------------------------
+.. The Below as soon as 5.11 is GA and we want to run that version for our workshops!!!!
+
+.. - **Boot Configuration**
+ ..  - Leave the default selected **Legacy Boot**
+
+   .. .. note::
+   ..  At the following URL you can find the supported Operating Systems
+   ..  http://my.nutanix.com/uefi_boot_support
+
+.. -------------------------------------------------------------------------------------
+
+
 - Select **Add New NIC**
     - **VLAN Name** - Secondary
     - Select **Add**
